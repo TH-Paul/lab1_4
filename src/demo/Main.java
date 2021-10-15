@@ -1,7 +1,11 @@
 package demo;
 
 public class Main {
-
+    /**
+     *
+     * @param tastaturen - array de int
+     * @return cea mai ieftina tastatura
+     */
     public static int billigste_tastatur(int[] tastaturen){
         int min = tastaturen[0];
 
@@ -15,6 +19,12 @@ public class Main {
         return min;
     }
 
+    /**
+     *
+     * @param tastaturen - array de int
+     * @param usb - array de int
+     * @return cel mai scump obiect
+     */
     public static int teuerster_gegenstand(int[] tastaturen, int[] usb){
         int max = 0;
 
@@ -34,6 +44,12 @@ public class Main {
         return max;
     }
 
+    /**
+     *
+     * @param usb - array de int
+     * @param budget - int
+     * @return cel mai scump usb in bugetul respectiv
+     */
     public static int teuerster_usb(int[] usb, int budget){
         //pentru a obtine elementul cautat, trebuie sa gasim
         //produsul pentru care diferenta dintre buget si pret este minima
@@ -68,6 +84,13 @@ public class Main {
         return budget - min;
     }
 
+    /**
+     *
+     * @param budget - int
+     * @param tastaturen - array de int
+     * @param usb - array de int
+     * @return suma maxima pe care o poate cheltui cumparand ambele obiecte
+     */
     public static int max_geldbetrag(int budget, int[] tastaturen, int[] usb){
 
         //pentru a obtine suma cautata, trebuie sa gasim
